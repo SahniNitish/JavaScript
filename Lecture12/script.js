@@ -76,3 +76,7 @@ let promise = new Promise((resolve , reject)=>{
         console.log("I am a Promise");
         resolve(123);
     })
+
+    let promise2 = new Promise((resolve , reject)=>{
+        console.log("I am not a promise")
+    })
