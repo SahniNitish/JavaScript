@@ -72,11 +72,32 @@ let promise = new Promise((resolve , reject)=>{
 
 
 
+<<<<<<< HEAD:Lecture12/script1.js
+    // let promise = new Promise((resolve , reject)=>{
+    //     console.log("I am a Promise");
+    //     resolve(123);
+    // })
+
+    // let promise2 = new Promise((resolve , reject)=>{
+    //     console.log("I am not a promise")
+    // })
+
+    function getData(dataId , getNextData){
+        return  promise((resolve , reject)=>{
+            setTimeout(()=>{
+                console.log("Data" , dataId);
+                resolve("success");
+            if(getNextData){
+                getNextData();
+            }
+            },5000);
+        });
+    }
+=======
     let promise = new Promise((resolve , reject)=>{
         console.log("I am a Promise");
-        resolve(123);
+        resolve(sucess);
     })
 
-    let promise2 = new Promise((resolve , reject)=>{
-        console.log("I am not a promise")
-    })
+ 
+>>>>>>> 62ede48f8c0159a49371ccad573c445d2872bb4c:Lecture12/script.js
