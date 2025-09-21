@@ -101,3 +101,12 @@ let promise = new Promise((resolve , reject)=>{
 
  
 >>>>>>> 62ede48f8c0159a49371ccad573c445d2872bb4c:Lecture12/script.js
+   function getData(dataId , getNextData){
+        return  promise((resolve , reject)=>{
+            setTimeout(()=>{
+                console.log("Data" , dataId);
+                resolve("success");
+            if(getNextData){
+                getNextData();
+            }
+            },5000);
