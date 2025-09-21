@@ -107,3 +107,4 @@ let promise = new Promise((resolve , reject)=>{
                 getNextData();
             }
             },5000);
+ 
