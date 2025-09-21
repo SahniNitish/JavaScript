@@ -72,7 +72,6 @@ let promise = new Promise((resolve , reject)=>{
 
 
 
-<<<<<<< HEAD:Lecture12/script1.js
     // let promise = new Promise((resolve , reject)=>{
     //     console.log("I am a Promise");
     //     resolve(123);
@@ -93,14 +92,12 @@ let promise = new Promise((resolve , reject)=>{
             },5000);
         });
     }
-=======
     let promise = new Promise((resolve , reject)=>{
         console.log("I am a Promise");
         resolve(sucess);
     })
 
  
->>>>>>> 62ede48f8c0159a49371ccad573c445d2872bb4c:Lecture12/script.js
    function getData(dataId , getNextData){
         return  promise((resolve , reject)=>{
             setTimeout(()=>{
